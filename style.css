@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Livvic;
+}
+
+body {
+    background: rgb(1, 78, 86);
+}
+
+header {
+    padding: 70px 120px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 32px;
+    color:  #fff;
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+nav .child {
+    text-decoration: none;
+    background: transparent;
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 24px;
+    padding: 10px 30px;
+    transition: .5s;
+}
+
+nav .child:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(1, 78, 86);
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero {
+    padding: 140px 120px;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .container h2 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.hero .container p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    width: 650px;
+}
+
+.hero2 {
+    padding-block: 70px;
+    background: rgb(0, 64, 71);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+    padding-inline: 100px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+.hero2 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero2 .container .card {
+    width: 350px;
+    background: rgb(1, 47, 52);
+    padding-block: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card h2 {
+    color: rgb(121, 200, 199);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card p {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.hero3 {
+    padding: 113px 100px;
+    background: rgb(1, 47, 52);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero3 .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero3 .container img {
+    width: 17%;
+}
+
+.hero4 {
+    padding: 76px 120px;
+    background: rgb(246, 126, 126);
+}
+
+.hero4 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero4 .container h2 {
+    color: rgb(1, 47, 52);
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.hero4 .container .child {
+    text-decoration: none;
+    background: transparent;
+    color: rgb(1, 47, 52);
+    border: 2px solid rgb(1, 47, 52);
+    border-radius: 24px;
+    padding: 10px 30px;
+    transition: .5s;
+}
+
+.hero4 .container .child:hover {
+    color: rgb(246, 126, 126);
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(246, 126, 126);
+}
+
+footer {
+    background: rgb(0, 37, 41);
+    padding: 48px 120px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container .logos {
+    display: flex;
+    gap: 20px;
+}
+
+/* BREAKPOINTS */
+@media (max-width: 768px) {
+    header {
+        padding: 72px 39px;
+    }
+
+    .hero .container {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .hero .container p {
+        text-align: center;
+        width: 90%;
+    }
+
+    .hero2 {
+        padding: 100px 10px;
+    }
+
+    .hero2 .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .hero3 {
+        background: rgb(0, 64, 71);
+        padding: 100px 130px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .hero3 .container {}
+
+    .hero3 .container img {
+        width: 15%;
+    }
+
+    .hero4 .container h2 {
+        color: rgb(1, 47, 52);
+        font-size: 32px;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 375px) {
+    header {
+        padding: 48px 24px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #logo {
+        display: block;
+    }
+
+    .hero .container h2 {
+        font-size: 40px;
+    }
+
+    .hero {
+        padding: 80px 24px;
+    }
+
+    .hero3 .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .hero3 .container img {
+        width: 100%;
+    }
+
+    .hero4 {
+        padding: 100px 24px;
+    }
+
+    .hero4 .container h2 {
+        font-size: 32px;
+    }
+
+    .hero4 .container {
+        flex-direction: column;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    footer {
+        padding: 66px 120px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        gap: 24px;
+    }
+}
